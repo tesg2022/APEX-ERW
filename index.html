@@ -1,0 +1,146 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="description" content="APEX-ERW integrated environmental and social impact assessment dashboard for Enhanced Rock Weathering in Cape Town.">
+<title>APEX-ERW Dashboard v2 | Cape Town</title>
+<link rel="preconnect" href="https://fonts.googleapis.com"><link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/css/dashboard.css">
+<script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.4/dist/chart.umd.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/papaparse@5.4.1/papaparse.min.js"></script>
+<script src="data/table_catalog.js"></script><script src="data/figure_catalog.js"></script><script src="data/map_catalog.js"></script><script src="data/raster_catalog.js"></script>
+</head>
+<body>
+<header class="topbar"><div class="brandwrap"><div class="logo">A</div><div class="brand">APEX-ERW<small>ENVIRONMENTAL & SOCIAL INTELLIGENCE</small></div></div><div class="topmeta">Cape Town, South Africa <span class="status">● Research decision-support prototype</span></div></header>
+<div class="shell">
+<aside><div class="side-label">Workspace</div>
+<button class="navbtn active" data-section="overview"><span class="navico">▦</span>Overview</button>
+<button class="navbtn" data-section="environment"><span class="navico">◈</span>Environmental baseline</button>
+<button class="navbtn" data-section="spatial"><span class="navico">⌖</span>Spatial screening</button>
+<button class="navbtn" data-section="social"><span class="navico">◎</span>Social impact</button>
+<button class="navbtn" data-section="cdr"><span class="navico">♧</span>CDR scenarios</button>
+<button class="navbtn" data-section="risk"><span class="navico">△</span>Risk & safeguards</button>
+<button class="navbtn" data-section="maps"><span class="navico">▧</span>Interactive maps</button>
+<button class="navbtn" data-section="figures"><span class="navico">▤</span>Figures gallery</button>
+<button class="navbtn" data-section="explorer"><span class="navico">▦</span>Data explorer</button>
+<button class="navbtn" data-section="formulas"><span class="navico">ƒ</span>Formulas & models</button>
+<button class="navbtn" data-section="mrv"><span class="navico">✓</span>MRV & evidence</button>
+<div class="side-note"><b>Evidence-led assessment</b><br>Historical environmental predictors, spatial screening and scenario estimates are not measured ERW treatment outcomes. This dashboard does not grant permission to deploy ERW.</div>
+</aside>
+<main>
+<div class="pagehead"><div><div class="eyebrow">APEX · Predictive assessment environment · v2</div><h1>AI-Enabled Predictive Environmental & Social Impact Assessment of Enhanced Rock Weathering</h1><div class="sub">An integrated research dashboard connecting source tables, figures, maps, model settings, screening calculations and monitoring requirements for Cape Town, South Africa.</div></div><div class="controls"><button class="btn" onclick="window.print()">Print / Save PDF</button><a class="btn primary" href="README.md" target="_blank">User guide</a></div></div>
+<div class="notice"><b>Evidence status:</b> The supplied model configuration specifies 2,459 samples, four clusters and no available carbon-removal target labels. Environmental predictors do not independently establish measured ERW carbon removal. Candidate-area results are preliminary screening outputs, not approved application land. Social proxies are not evidence of consent, acceptance or household-level impacts.</div>
+
+<section class="section active" id="overview">
+<div class="grid kpis">
+<div class="card"><div class="accent"></div><div class="kpi-label">Preliminary candidate area</div><div class="kpi-value">98,594.51 ha</div><div class="kpi-foot">40.18% of municipal area · source candidate-area statistics, 2025</div></div>
+<div class="card"><div class="accent"></div><div class="kpi-label">EVI mean</div><div class="kpi-value">0.629</div><div class="kpi-foot">Previously reported summary; inspect class and raster source before interpreting</div></div>
+<div class="card"><div class="accent"></div><div class="kpi-label">Soil pH mean</div><div class="kpi-value">6.37</div><div class="kpi-foot">28,122 valid pixels in supplied spatial statistics</div></div>
+<div class="card"><div class="accent"></div><div class="kpi-label">Measured ERW outcome labels</div><div class="kpi-value">0</div><div class="kpi-foot">Source model configuration: carbon_removal_target_available = false</div></div>
+</div>
+<div class="grid two">
+<div class="card"><div class="cardhead"><div><h3>Annual climate and hydrological indicators</h3><p class="hint">Supplied combined annual summary table</p></div><span class="tag">Historical series</span></div><div class="chartbox"><canvas id="annualChart"></canvas></div></div>
+<div class="card"><div class="cardhead"><div><h3>Environmental vulnerability classes</h3><p class="hint">Area by class from supplied EVI table</p></div><span class="tag">Screening output</span></div><div class="chartbox"><canvas id="eviChart"></canvas></div></div>
+</div>
+<div class="grid three" style="margin-top:14px">
+<div class="card"><h3>Environmental baseline</h3><p class="hint">Rainfall, ET, temperature, soil moisture, runoff, vegetation and soil properties.</p></div>
+<div class="card"><h3>Social impact assessment</h3><p class="hint">Population exposure proxies, stakeholder evidence gaps, livelihoods, equity and safeguards.</p></div>
+<div class="card"><h3>ERW CDR scenarios</h3><p class="hint">Transparent stoichiometric and lifecycle assumptions, not verified net removal.</p></div>
+</div>
+</section>
+
+<section class="section" id="environment">
+<div class="grid two">
+<div class="card"><div class="cardhead"><div><h3>Environmental baseline tables</h3><p class="hint">Select the relevant source CSV in the Data Explorer.</p></div></div><p class="smallprint">Included source datasets cover annual environmental summaries, regional annual summaries, scenario tables, combined ML training data, integrated environmental samples, soil statistics, predictions and missing-data reporting.</p><button class="btn primary" onclick="document.querySelector('[data-section=explorer]').click()">Open data explorer</button></div>
+<div class="card"><div class="cardhead"><div><h3>Soil property statistics</h3><p class="hint">Source: CIPAAI_CapeTown_Spatial_Statistics.csv</p></div></div><div class="metriclist"><div class="metric"><span>Soil organic carbon mean</span><strong>51.54 g/kg*</strong></div><div class="metric"><span>Soil pH mean</span><strong>6.37</strong></div><div class="metric"><span>Valid pixels (SOC / pH)</span><strong>28,127 / 28,122</strong></div></div><p class="smallprint">*Confirm SOC units, depth and raster provenance against the data dictionary before publication.</p></div>
+</div>
+<div class="card" style="margin-top:14px"><div class="cardhead"><div><h3>Available environmental figures</h3><p class="hint">Soil, vegetation and environmental vulnerability maps supplied in the archive</p></div><span class="tag">Source figures</span></div><div class="smallprint">Open the Figures Gallery for all original PNG figures, including soil organic carbon, pH, clay, sand, EVI, vulnerability classes, EVI area distribution, soil-moisture inflow lag, correlations, cluster importance and rainfall/soil-moisture outputs.</div><button class="btn primary" onclick="document.querySelector('[data-section=figures]').click()">View figures gallery</button></div>
+</section>
+
+<section class="section" id="spatial">
+<div class="grid two">
+<div class="card"><h3>Spatial screening evidence</h3><p class="hint">Candidate-area screening and constraints</p><div class="metriclist" style="margin-top:12px"><div class="metric"><span>Minimum annual rainfall</span><strong>300 mm</strong></div><div class="metric"><span>Soil pH range</span><strong>4.5–7.5</strong></div><div class="metric"><span>Maximum SOC threshold</span><strong>40 g/kg</strong></div><div class="metric"><span>Maximum slope</span><strong>12°</strong></div><div class="metric"><span>Water buffer</span><strong>500 m</strong></div></div></div>
+<div class="card"><h3>Candidate-area statistics</h3><p class="hint">Source result, analysis year 2025</p><div class="metriclist" style="margin-top:12px"><div class="metric"><span>Preliminary candidate area</span><strong>98,594.51 ha</strong></div><div class="metric"><span>Municipal area</span><strong>245,366.06 ha</strong></div><div class="metric"><span>Candidate share</span><strong>40.18%</strong></div></div><div class="risk">Screening thresholds do not establish landowner consent, land-use eligibility, ecological suitability, regulatory approval or actual ERW effectiveness.</div></div>
+</div>
+<div class="card" style="margin-top:14px"><h3>Spatial source layers</h3><p class="hint">The archive includes GeoTIFF environmental stacks, soil properties, elevation, slope, land cover, EVI and population density. They are retained in data/rasters for GIS analysis; browser rendering of large GeoTIFFs requires a raster tile service or conversion to web tiles.</p><button class="btn primary" onclick="document.querySelector('[data-section=maps]').click()">Open interactive maps</button></div>
+</section>
+
+<section class="section" id="social">
+<div class="notice"><b>Social-data limitation:</b> Population layers are proxies and do not substitute for census/household data, livelihood surveys, land-tenure records, water-access evidence, health assessments or direct stakeholder consultation.</div>
+<div class="grid two">
+<div class="card"><h3>Available social and impact tables</h3><p class="hint">Social population series, environmental/social clusters, impact assessment and constraints are available in the Data Explorer.</p><button class="btn primary" onclick="document.querySelector('[data-section=explorer]').click()">Explore social tables</button></div>
+<div class="card"><h3>Required social evidence</h3><div class="metriclist"><div class="metric"><span>Population exposure</span><strong>Ward / settlement-level validation</strong></div><div class="metric"><span>Land access and tenure</span><strong>Ownership, leases, rights and consent</strong></div><div class="metric"><span>Livelihoods and equity</span><strong>Employment, income dependence and distribution</strong></div><div class="metric"><span>Health and safety</span><strong>Dust, transport, worker and community exposure</strong></div><div class="metric"><span>Participation</span><strong>Consultation, response and grievance registers</strong></div></div></div>
+</div>
+</section>
+
+<section class="section" id="cdr">
+<div class="notice"><b>CDR qualification:</b> No measured ERW carbon-removal target labels are available in the supplied model configuration. The calculator below is an illustrative stoichiometric screening calculation. Total CaO/MgO percentages are not equivalent to reactive mineral phases; alkalinity export alone is not permanent atmospheric CO₂ removal.</div>
+<div class="card"><div class="cardhead"><div><h3>Interactive CDR scenario calculator</h3><p class="hint">Editable assumptions; results are per hectare and per application scenario.</p></div><span class="tag">Assumption-based</span></div>
+<div class="inputs">
+<label>CaO (wt.%)<input id="cao" type="number" value="10" min="0" max="100" step=".1"></label>
+<label>MgO (wt.%)<input id="mgo" type="number" value="8" min="0" max="100" step=".1"></label>
+<label>Rock application (t/ha)<select id="rate"><option>0</option><option>5</option><option selected>10</option><option>20</option></select></label>
+<label>Dissolution efficiency (0–1)<input id="diss" type="number" value=".30" min="0" max="1" step=".01"></label>
+<label>Carbonation efficiency (0–1)<input id="carb" type="number" value=".70" min="0" max="1" step=".01"></label>
+<label>LCA emissions (tCO₂/t rock)<input id="lca" type="number" value=".02" min="0" step=".001"></label>
+</div><button class="btn primary" id="cdrCalc" style="margin-top:12px">Calculate scenario</button><div id="cdrResult" style="margin-top:13px"></div>
+<p class="smallprint">Formula basis: theoretical oxide capacity × dissolution efficiency × carbonation efficiency × rock rate, less lifecycle emissions. This is not a full carbon balance or MRV result.</p></div>
+<div class="card" style="margin-top:14px"><h3>CDR source assets</h3><p class="hint">The archive contains a carbon sequestration potential map and a 10 t/ha net CDR GeoTIFF. The raster is included in the downloadable source assets; its scenario assumptions should be checked against laboratory and LCA measurements.</p></div>
+</section>
+
+<section class="section" id="risk">
+<div class="grid two">
+<div class="card"><h3>Environmental risk register</h3><div class="tablewrap"><table><thead><tr><th>Pathway</th><th>Potential concern</th><th>Evidence / control</th></tr></thead><tbody>
+<tr><td>Soil chemistry</td><td>pH shifts, nutrient imbalance, trace-element mobilisation</td><td>Feedstock assays and repeated soil chemistry</td></tr>
+<tr><td>Water quality</td><td>Alkalinity, dissolved metals, downstream effects</td><td>Upgradient/downgradient monitoring and lab QA/QC</td></tr>
+<tr><td>Hydrology</td><td>Infiltration, runoff, soil moisture and recharge pathways</td><td>Control plots and water-balance monitoring</td></tr>
+<tr><td>Biodiversity</td><td>Habitat disturbance and sensitive receptors</td><td>Ecological surveys and avoidance buffers</td></tr>
+<tr><td>Air and transport</td><td>Dust, traffic, noise and worker exposure</td><td>Material handling and occupational safety plans</td></tr>
+<tr><td>Social equity</td><td>Unequal benefits, land access and participation gaps</td><td>Engagement and distributional impact analysis</td></tr>
+</tbody></table></div></div>
+<div class="card"><h3>South African regulatory screening</h3><div class="metriclist"><div class="metric"><span>Environmental authorisation</span><strong>National Environmental Management Act</strong></div><div class="metric"><span>Water resource protection</span><strong>National Water Act</strong></div><div class="metric"><span>Biodiversity</span><strong>National Environmental Management: Biodiversity Act</strong></div><div class="metric"><span>Protected areas</span><strong>National Environmental Management: Protected Areas Act</strong></div><div class="metric"><span>Heritage</span><strong>National Heritage Resources Act</strong></div></div><p class="smallprint">Applicability must be confirmed by qualified environmental and legal specialists for each proposed site and activity.</p></div>
+</div>
+</section>
+
+<section class="section" id="maps">
+<div class="card"><div class="cardhead"><div><h3 id="mapTitle">Interactive map</h3><p class="hint">Original HTML maps supplied in the archive are embedded below.</p></div><span class="tag">Original map assets</span></div><div class="maptabs" id="mapTabs"></div><iframe id="mapFrame" class="mapframe" title="APEX-ERW interactive map" loading="lazy"></iframe><p class="smallprint">Maps are preserved from the source archive. Their own dependencies and data layers may require an internet connection or their original supporting assets.</p></div>
+</section>
+
+<section class="section" id="figures">
+<div class="card"><div class="cardhead"><div><h3>Figures and map-image gallery</h3><p class="hint">All raster figures included in the supplied archive. Select an image to open its original file.</p></div><span class="tag" id="figureCount">Loading</span></div><div class="gallery" id="figureGallery"></div></div>
+</section>
+
+<section class="section" id="explorer">
+<div class="card"><div class="cardhead"><div><h3>Research data explorer</h3><p class="hint">All CSV tables discovered in the archive are catalogued and loaded on demand.</p></div><span class="tag" id="tableCount">CSV tables</span></div>
+<div class="tabletools"><select id="tableSelect"><option value="">Choose a CSV dataset…</option></select><input id="tableSearch" type="search" placeholder="Search visible rows…"><a id="tableDownload" class="btn" href="#" download>Download selected CSV</a></div>
+<div class="smallprint" id="tableStatus">Choose a dataset to preview its records.</div><div class="smallprint" id="tablePath" style="margin:5px 0 10px"></div>
+<div class="tablewrap"><table><thead id="dataHead"></thead><tbody id="dataBody"></tbody></table></div><p class="smallprint" id="tableRowsShown"></p>
+</div>
+<div class="card" style="margin-top:14px"><div class="cardhead"><div><h3>CSV source inventory</h3><p class="hint">File catalogue with direct download links</p></div></div><div class="tablewrap"><table><thead><tr><th>Source file</th><th>Columns</th><th>Size</th><th>Download</th></tr></thead><tbody id="tableCatalog"></tbody></table></div></div>
+<div class="card" style="margin-top:14px"><div class="cardhead"><div><h3>GeoTIFF raster inventory</h3><p class="hint">Original raster files are included for QGIS / Python analysis</p></div></div><div class="tablewrap"><table><thead><tr><th>Raster file</th><th>Size</th><th>File</th></tr></thead><tbody id="rasterCatalog"></tbody></table></div></div>
+</section>
+
+<section class="section" id="formulas">
+<div class="card"><h3>Formula and model documentation</h3><p class="hint">Formula reference is also available in documentation/formula_reference.md.</p>
+<div class="formula"><b>1. Water availability screening</b><div class="equation">W = P − ET</div><p>P = precipitation; ET = actual evapotranspiration. Consistent period and units required. This is a water-availability proxy, not groundwater recharge.</p></div>
+<div class="formula"><b>2. Water balance</b><div class="equation">ΔS = P − ET − Q − R</div><p>Use only with clearly defined, non-overlapping outflow terms. Avoid double counting runoff or other losses.</p></div>
+<div class="formula"><b>3. Weighted environmental index</b><div class="equation">EVI = Σ(wᵢ × Xᵢ), &nbsp; Σwᵢ = 1</div><p>The source archive does not provide enough evidence in the dashboard to assume undocumented weights or transformations. Refer to the model code/configuration for exact weights, normalisation and directionality.</p></div>
+<div class="formula"><b>4. Spearman rank correlation</b><div class="equation">ρₛ = corr(rank(X), rank(Y))</div><p>The supplied Spearman correlation CSV is available in the Data Explorer. Correlation does not imply causation.</p></div>
+<div class="formula"><b>5. Theoretical oxide-based CO₂ capacity</b><div class="equation">C = (CaO/100 × 44.01/56.077) + (MgO/100 × 44.01/40.304)</div><p>Upper-bound stoichiometric screening approximation; total oxides are not necessarily reactive mineral phases.</p></div>
+<div class="formula"><b>6. Gross and net CDR scenario</b><div class="equation">CDR<sub>gross</sub> = M<sub>rock</sub> × C × f<sub>dissolution</sub> × f<sub>carbonation</sub><br>CDR<sub>net</sub> = CDR<sub>gross</sub> − E<sub>LCA</sub></div><p>Ensure the LCA term is on the same mass and area basis. This is not an MRV-grade carbon balance.</p></div>
+<div class="formula"><b>7. Candidate-area screening</b><div class="equation">Candidate area = area of pixels satisfying all configured screening constraints</div><p>The supplied configuration includes pH 4.5–7.5, SOC ≤40 g/kg, slope ≤12°, annual rainfall ≥300 mm and 500 m water buffer. It remains a preliminary screen.</p></div>
+</div>
+</section>
+
+<section class="section" id="mrv">
+<div class="grid two">
+<div class="card"><h3>MRV requirements</h3><div class="metriclist"><div class="metric"><span>Feedstock characterisation</span><strong>Mineralogy, particle size, trace elements</strong></div><div class="metric"><span>Experimental design</span><strong>Replicated treatment and untreated controls</strong></div><div class="metric"><span>Soil and water chemistry</span><strong>pH, alkalinity, Ca, Mg, trace metals and carbon</strong></div><div class="metric"><span>Carbon accounting</span><strong>Alkalinity export, carbon fate and permanence</strong></div><div class="metric"><span>Lifecycle assessment</span><strong>Quarrying, grinding, transport, spreading and monitoring</strong></div><div class="metric"><span>Independent verification</span><strong>QA/QC, uncertainty and specialist review</strong></div></div></div>
+<div class="card"><h3>Decision gates</h3><div class="metriclist"><div class="metric"><span>Gate 1</span><strong>Define intervention and eligibility</strong><span>Confirm site, feedstock, scale, comparator and permissions.</span></div><div class="metric"><span>Gate 2</span><strong>Verify baseline and safeguards</strong><span>Validate environmental and social evidence and consultation.</span></div><div class="metric"><span>Gate 3</span><strong>Independent technical review</strong><span>Hydrology, geochemistry, ecology, social science and regulatory review.</span></div><div class="metric"><span>Gate 4</span><strong>Proceed, redesign, defer or do not proceed</strong><span>No automatic approval or deployment decision.</span></div></div></div>
+</div>
+<div class="card" style="margin-top:14px"><h3>Assessment workflow figure</h3><img src="assets/figures/AI-Driven_ERW_Impact_Assessment_Workflow.png" alt="AI-driven ERW impact assessment workflow" style="width:100%;max-height:420px;object-fit:contain"></div>
+</section>
+
+<div class="footer"><span>APEX-ERW Dashboard v2 · Built from supplied CIPA-AI ERW project archive</span><span>Source data preserved · Decision-support prototype · Not statutory EIA or verified CDR</span></div>
+</main></div>
+<script src="assets/js/dashboard.js"></script>
+</body></html>

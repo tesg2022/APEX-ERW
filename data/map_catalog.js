@@ -1,0 +1,1 @@
+window.APEX_MAPS = [{"name": "CIPAAI_CapeTown_Interactive_WebGIS.html", "path": "maps/CIPAAI_CapeTown_Interactive_WebGIS.html"}, {"name": "CIPA_AI_Cape_Town_ERW_Screening_Map (1).html", "path": "maps/CIPA_AI_Cape_Town_ERW_Screening_Map_(1).html"}];

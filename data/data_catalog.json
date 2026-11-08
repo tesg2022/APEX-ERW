@@ -1,0 +1,1173 @@
+{
+  "tables": [
+    {
+      "name": "CapeTown_ERW_Social_Impact_Population_2001_2026.csv",
+      "path": "data/tables/CapeTown_ERW_Social_Impact_Population_2001_2026.csv",
+      "columns": [
+        "year",
+        "population_reference_year",
+        "population_count",
+        "population_density_per_km2",
+        "area_km2",
+        "data_source"
+      ],
+      "preview_rows": 5,
+      "size_bytes": 2184
+    },
+    {
+      "name": "CIPAAI_CapeTown_Spatial_Statistics.csv",
+      "path": "data/tables/CIPAAI_CapeTown_Spatial_Statistics.csv",
+      "columns": [
+        "variable",
+        "valid_pixels",
+        "mean",
+        "median",
+        "minimum",
+        "maximum",
+        "std"
+      ],
+      "preview_rows": 5,
+      "size_bytes": 862
+    },
+    {
+      "name": "CIPAAI_EVI_Area_by_Class.csv",
+      "path": "data/tables/CIPAAI_EVI_Area_by_Class.csv",
+      "columns": [
+        "class",
+        "pixel_count",
+        "area_km2"
+      ],
+      "preview_rows": 5,
+      "size_bytes": 130
+    },
+    {
+      "name": "CIPAAI_Integrated_Environmental_Samples.csv",
+      "path": "data/tables/CIPAAI_Integrated_Environmental_Samples.csv",
+      "columns": [
+        "system:index",
+        "bulk_density_kgdm3",
+        "cec_cmolckg",
+        "clay_percent",
+        "elevation_m",
+        "landcover_class",
+        "mean_annual_et_mm",
+        "mean_annual_rainfall_mm",
+        "mean_lst_C",
+        "mean_ndvi",
+        "mean_soil_moisture_m3m3",
+        "mean_temperature_C",
+        "sand_percent",
+        "slope_degrees",
+        "soc_gkg",
+        "soil_ph",
+        "water_available_proxy_mm",
+        ".geo"
+      ],
+      "preview_rows": 5,
+      "size_bytes": 506493
+    },
+    {
+      "name": "CIPAAI_ML_Environmental_Predictors.csv",
+      "path": "data/tables/CIPAAI_ML_Environmental_Predictors.csv",
+      "columns": [
+        "system:index",
+        "elevation_m",
+        "era5_et_mm",
+        "era5_precip_mm",
+        "landcover_class",
+        "latitude",
+        "longitude",
+        "lst_C",
+        "modis_et_mm",
+        "ndvi",
+        "precip_mm",
+        "slope_degrees",
+        "soil_moisture_m3m3",
+        "temperature_C",
+        "water_available_mm",
+        ".geo"
+      ],
+      "preview_rows": 5,
+      "size_bytes": 652010
+    },
+    {
+      "name": "CIPA_AI_Cape_Town_ERW_Candidate_Area_Statistics (1).csv",
+      "path": "data/tables/CIPA_AI_Cape_Town_ERW_Candidate_Area_Statistics_(1).csv",
+      "columns": [
+        "system:index",
+        "analysis_year",
+        "interpretation",
+        "maximum_slope_degrees",
+        "maximum_soc_g_kg",
+        "maximum_soil_ph",
+        "minimum_annual_rainfall_mm",
+        "minimum_soil_ph",
+        "municipal_area_ha",
+        "preliminary_candidate_area_ha",
+        "preliminary_candidate_area_percent",
+        "protected_area_source",
+        "study_area",
+        "water_buffer_m",
+        ".geo"
+      ],
+      "preview_rows": 1,
+      "size_bytes": 524
+    },
+    {
+      "name": "CIPA_AI_Cape_Town_ERW_Environmental_Predictions_2025 (1).csv",
+      "path": "data/tables/CIPA_AI_Cape_Town_ERW_Environmental_Predictions_2025_(1).csv",
+      "columns": [
+        "system:index",
+        "annual_evaporation_mm",
+        "annual_potential_evaporation_mm",
+        "annual_subsurface_runoff_mm",
+        "annual_total_runoff_mm",
+        "aridity_index",
+        "chirps_annual_rainfall_mm",
+        "elevation_m",
+        "era5_annual_rainfall_mm",
+        "landcover_2021",
+        "mean_soil_moisture_layer1",
+        "mean_temperature_c",
+        "ndmi",
+        "ndvi",
+        "ndwi",
+        "precipitation_minus_evaporation_mm",
+        "preliminary_erw_screening",
+        "slope_degrees",
+        "soil_ph_10cm",
+        "soil_sand_percent_10cm",
+        "soil_soc_g_kg_10cm",
+        ".geo",
+        "rainfall_pet_ratio",
+        "soil_ph_soc_interaction",
+        "vegetation_moisture_interaction",
+        "pca_component_1",
+        "pca_component_2",
+        "environmental_cluster",
+        "environmental_anomaly",
+        "environmental_anomaly_score",
+        "erw_screening_score",
+        "erw_screening_class",
+        "gee_preliminary_screening",
+        "soil_acidity_flag",
+        "high_soc_flag",
+        "steep_slope_flag",
+        "low_rainfall_flag",
+        "environmental_constraint_count",
+        "longitude",
+        "latitude"
+      ],
+      "preview_rows": 5,
+      "size_bytes": 1127223
+    },
+    {
+      "name": "CIPA_AI_Data_Dictionary.csv",
+      "path": "data/tables/CIPA_AI_Data_Dictionary.csv",
+      "columns": [
+        "variable",
+        "description"
+      ],
+      "preview_rows": 5,
+      "size_bytes": 3670
+    },
+    {
+      "name": "CIPA_AI_Environmental_Constraints (1).csv",
+      "path": "data/tables/CIPA_AI_Environmental_Constraints_(1).csv",
+      "columns": [
+        "environmental_constraint_count",
+        "count"
+      ],
+      "preview_rows": 3,
+      "size_bytes": 54
+    },
+    {
+      "name": "CIPA_AI_ERW_Annual_Regional_Summary_2001_2026.csv",
+      "path": "data/tables/CIPA_AI_ERW_Annual_Regional_Summary_2001_2026.csv",
+      "columns": [
+        "system:index",
+        "elevation_m",
+        "evaporation_mm",
+        "evi",
+        "lst_day_c",
+        "ndvi",
+        "rainfall_chirps_mm",
+        "rainfall_era5_mm",
+        "slope_degrees",
+        "soil_moisture_layer1",
+        "soil_moisture_layer2",
+        "soil_moisture_layer3",
+        "soil_moisture_layer4",
+        "study_area",
+        "subsurface_runoff_mm",
+        "surface_runoff_mm",
+        "temperature_max_c",
+        "temperature_mean_c",
+        "temperature_min_c",
+        "total_runoff_mm",
+        "year",
+        ".geo"
+      ],
+      "preview_rows": 5,
+      "size_bytes": 11068
+    },
+    {
+      "name": "CIPA_AI_ERW_Combined_Annual_Summary_2001_2026.csv",
+      "path": "data/tables/CIPA_AI_ERW_Combined_Annual_Summary_2001_2026.csv",
+      "columns": [
+        "system:index",
+        "elevation_m",
+        "evaporation_mm",
+        "evi",
+        "lst_day_c",
+        "ndvi",
+        "primary_research_site",
+        "project",
+        "rainfall_chirps_mm",
+        "rainfall_era5_mm",
+        "slope_degrees",
+        "soil_moisture_layer1",
+        "soil_moisture_layer2",
+        "soil_moisture_layer3",
+        "soil_moisture_layer4",
+        "study_area",
+        "subsurface_runoff_mm",
+        "surface_runoff_mm",
+        "temperature_max_c",
+        "temperature_mean_c",
+        "temperature_min_c",
+        "total_runoff_mm",
+        "year",
+        ".geo"
+      ],
+      "preview_rows": 5,
+      "size_bytes": 11722
+    },
+    {
+      "name": "CIPA_AI_ERW_Combined_ML_Training_2001_2026.csv",
+      "path": "data/tables/CIPA_AI_ERW_Combined_ML_Training_2001_2026.csv",
+      "columns": [
+        "system:index",
+        "data_type",
+        "elevation_m",
+        "evaporation_mm",
+        "evi",
+        "landcover_igbp",
+        "latitude",
+        "longitude",
+        "lst_day_c",
+        "ndvi",
+        "primary_research_site",
+        "project",
+        "rainfall_chirps_mm",
+        "rainfall_era5_mm",
+        "slope_degrees",
+        "soil_moisture_layer1",
+        "soil_moisture_layer2",
+        "soil_moisture_layer3",
+        "soil_moisture_layer4",
+        "study_area",
+        "subsurface_runoff_mm",
+        "surface_runoff_mm",
+        "temperature_max_c",
+        "temperature_mean_c",
+        "temperature_min_c",
+        "total_runoff_mm",
+        "year",
+        ".geo"
+      ],
+      "preview_rows": 5,
+      "size_bytes": 1165777
+    },
+    {
+      "name": "CIPA_AI_ERW_Environmental_Social_Clusters.csv",
+      "path": "data/tables/CIPA_AI_ERW_Environmental_Social_Clusters.csv",
+      "columns": [
+        "system:index",
+        "data_type",
+        "elevation_m",
+        "evaporation_mm",
+        "evi",
+        "landcover_igbp",
+        "latitude",
+        "longitude",
+        "lst_day_c",
+        "ndvi",
+        "primary_research_site",
+        "project",
+        "rainfall_chirps_mm",
+        "rainfall_era5_mm",
+        "slope_degrees",
+        "soil_moisture_layer1",
+        "soil_moisture_layer2",
+        "soil_moisture_layer3",
+        "soil_moisture_layer4",
+        "study_area",
+        "subsurface_runoff_mm",
+        "surface_runoff_mm",
+        "temperature_max_c",
+        "temperature_mean_c",
+        "temperature_min_c",
+        "total_runoff_mm",
+        "year",
+        ".geo",
+        "environmental_social_cluster"
+      ],
+      "preview_rows": 5,
+      "size_bytes": 1160282
+    },
+    {
+      "name": "CapeTown_ERW_Annual_Summary.csv",
+      "path": "data/tables/CapeTown_ERW_Annual_Summary.csv",
+      "columns": [
+        "system:index",
+        "elevation_m",
+        "evaporation_mm",
+        "evi",
+        "lst_day_c",
+        "ndvi",
+        "primary_research_site",
+        "project",
+        "rainfall_chirps_mm",
+        "rainfall_era5_mm",
+        "slope_degrees",
+        "soil_moisture_layer1",
+        "soil_moisture_layer2",
+        "soil_moisture_layer3",
+        "soil_moisture_layer4",
+        "study_area",
+        "subsurface_runoff_mm",
+        "surface_runoff_mm",
+        "temperature_max_c",
+        "temperature_mean_c",
+        "temperature_min_c",
+        "total_runoff_mm",
+        "year",
+        ".geo"
+      ],
+      "preview_rows": 5,
+      "size_bytes": 11563
+    },
+    {
+      "name": "CapeTown_ERW_Environmental_Social_Impact_2001_2026.csv",
+      "path": "data/tables/CapeTown_ERW_Environmental_Social_Impact_2001_2026.csv",
+      "columns": [
+        "system:index",
+        "data_type",
+        "elevation",
+        "evaporation_mm",
+        "evi",
+        "land_cover",
+        "latitude",
+        "longitude",
+        "lst_day_c",
+        "vegetation_index",
+        "primary_research_site",
+        "project",
+        "rainfall",
+        "rainfall_era5_mm",
+        "slope",
+        "soil_moisture_layer1",
+        "soil_moisture_layer2",
+        "soil_moisture_layer3",
+        "soil_moisture",
+        "study_area",
+        "subsurface_runoff",
+        "surface_runoff_mm",
+        "temperature_max_c",
+        "temperature",
+        "temperature_min_c",
+        "total_runoff_mm",
+        "year",
+        ".geo",
+        "social_vulnerability_index",
+        "community_accessibility_index",
+        "environmental_screening_index"
+      ],
+      "preview_rows": 5,
+      "size_bytes": 1196188
+    },
+    {
+      "name": "CapeTown_ERW_Scenarios_2001_2026.csv",
+      "path": "data/tables/CapeTown_ERW_Scenarios_2001_2026.csv",
+      "columns": [
+        "system:index",
+        "data_type",
+        "elevation",
+        "evaporation_mm",
+        "evi",
+        "land_cover",
+        "latitude",
+        "longitude",
+        "lst_day_c",
+        "vegetation_index",
+        "primary_research_site",
+        "project",
+        "rainfall",
+        "rainfall_era5_mm",
+        "slope",
+        "soil_moisture_layer1",
+        "soil_moisture_layer2",
+        "soil_moisture_layer3",
+        "soil_moisture",
+        "study_area",
+        "subsurface_runoff",
+        "surface_runoff_mm",
+        "temperature_max_c",
+        "temperature",
+        "temperature_min_c",
+        "total_runoff_mm",
+        "year",
+        ".geo",
+        "social_vulnerability_index",
+        "community_accessibility_index",
+        "environmental_screening_index",
+        "erw_scenario",
+        "mineral_application_rate",
+        "erw_application_flag",
+        "application_rate_t_ha"
+      ],
+      "preview_rows": 5,
+      "size_bytes": 5009110
+    },
+    {
+      "name": "CIPA_AI_Cape_Town_Impact_Assessment.csv",
+      "path": "data/tables/CIPA_AI_Cape_Town_Impact_Assessment.csv",
+      "columns": [
+        "system:index",
+        "data_type",
+        "elevation",
+        "evaporation_mm",
+        "evi",
+        "land_cover",
+        "latitude",
+        "longitude",
+        "lst_day_c",
+        "vegetation_index",
+        "primary_research_site",
+        "project",
+        "rainfall",
+        "rainfall_era5_mm",
+        "slope",
+        "soil_moisture_layer1",
+        "soil_moisture_layer2",
+        "soil_moisture_layer3",
+        "soil_moisture",
+        "study_area",
+        "subsurface_runoff",
+        "surface_runoff_mm",
+        "temperature_max_c",
+        "temperature",
+        "temperature_min_c",
+        "total_runoff_mm",
+        "year",
+        ".geo",
+        "social_vulnerability_index",
+        "community_accessibility_index",
+        "environmental_screening_index"
+      ],
+      "preview_rows": 5,
+      "size_bytes": 48344
+    },
+    {
+      "name": "CIPA_AI_Data_Dictionary.csv",
+      "path": "data/tables/CIPA_AI_ERW_Environmental_Social_Outputs_(1)__CIPA_AI_Data_Dictionary.csv",
+      "columns": [
+        "variable",
+        "description"
+      ],
+      "preview_rows": 5,
+      "size_bytes": 3670
+    },
+    {
+      "name": "01_Environmental_Baseline_2001_2026.csv",
+      "path": "data/tables/01_Environmental_Baseline_2001_2026.csv",
+      "columns": [
+        "year",
+        "ndvi_mean",
+        "ndvi_std",
+        "ndvi_min",
+        "ndvi_max"
+      ],
+      "preview_rows": 5,
+      "size_bytes": 2067
+    },
+    {
+      "name": "01_Environmental_Baseline_Statistics.csv",
+      "path": "data/tables/01_Environmental_Baseline_Statistics.csv",
+      "columns": [
+        "",
+        "count",
+        "mean",
+        "std",
+        "min",
+        "25%",
+        "50%",
+        "75%",
+        "max"
+      ],
+      "preview_rows": 1,
+      "size_bytes": 183
+    },
+    {
+      "name": "02_ERW_Suitability_Screening.csv",
+      "path": "data/tables/02_ERW_Suitability_Screening.csv",
+      "columns": [
+        "system:index",
+        "data_type",
+        "elevation_m",
+        "evaporation_mm",
+        "evi",
+        "landcover_igbp",
+        "latitude",
+        "longitude",
+        "lst_day_c",
+        "ndvi",
+        "primary_research_site",
+        "project",
+        "rainfall_chirps_mm",
+        "rainfall_era5_mm",
+        "slope_degrees",
+        "soil_moisture_layer1",
+        "soil_moisture_layer2",
+        "soil_moisture_layer3",
+        "soil_moisture_layer4",
+        "study_area",
+        "subsurface_runoff_mm",
+        "surface_runoff_mm",
+        "temperature_max_c",
+        "temperature_mean_c",
+        "temperature_min_c",
+        "total_runoff_mm",
+        "year",
+        ".geo",
+        "slope",
+        "erw_suitability_index",
+        "erw_suitability_class"
+      ],
+      "preview_rows": 5,
+      "size_bytes": 1225235
+    },
+    {
+      "name": "04_Environmental_Risk_Screening.csv",
+      "path": "data/tables/04_Environmental_Risk_Screening.csv",
+      "columns": [
+        "system:index",
+        "data_type",
+        "elevation_m",
+        "evaporation_mm",
+        "evi",
+        "landcover_igbp",
+        "latitude",
+        "longitude",
+        "lst_day_c",
+        "ndvi",
+        "primary_research_site",
+        "project",
+        "rainfall_chirps_mm",
+        "rainfall_era5_mm",
+        "slope_degrees",
+        "soil_moisture_layer1",
+        "soil_moisture_layer2",
+        "soil_moisture_layer3",
+        "soil_moisture_layer4",
+        "study_area",
+        "subsurface_runoff_mm",
+        "surface_runoff_mm",
+        "temperature_max_c",
+        "temperature_mean_c",
+        "temperature_min_c",
+        "total_runoff_mm",
+        "year",
+        ".geo",
+        "slope",
+        "slope_risk_scaled",
+        "environmental_screening_index",
+        "environmental_screening_class"
+      ],
+      "preview_rows": 5,
+      "size_bytes": 1308067
+    },
+    {
+      "name": "06_Environmental_Social_Clusters.csv",
+      "path": "data/tables/06_Environmental_Social_Clusters.csv",
+      "columns": [
+        "system:index",
+        "data_type",
+        "elevation_m",
+        "evaporation_mm",
+        "evi",
+        "landcover_igbp",
+        "latitude",
+        "longitude",
+        "lst_day_c",
+        "ndvi",
+        "primary_research_site",
+        "project",
+        "rainfall_chirps_mm",
+        "rainfall_era5_mm",
+        "slope_degrees",
+        "soil_moisture_layer1",
+        "soil_moisture_layer2",
+        "soil_moisture_layer3",
+        "soil_moisture_layer4",
+        "study_area",
+        "subsurface_runoff_mm",
+        "surface_runoff_mm",
+        "temperature_max_c",
+        "temperature_mean_c",
+        "temperature_min_c",
+        "total_runoff_mm",
+        "year",
+        ".geo",
+        "slope",
+        "environmental_social_cluster"
+      ],
+      "preview_rows": 5,
+      "size_bytes": 1182602
+    },
+    {
+      "name": "CIPA_AI_intervention_training.csv",
+      "path": "data/tables/CIPA_AI_intervention_training.csv",
+      "columns": [
+        "site_id",
+        "year",
+        "longitude",
+        "latitude",
+        "intervention_type",
+        "intensity",
+        "soc_gkg",
+        "soil_ph",
+        "bulk_density_kgdm3",
+        "clay_percent",
+        "sand_percent",
+        "precip_mm",
+        "temperature_C",
+        "soil_moisture_m3m3",
+        "era5_precip_mm",
+        "era5_et_mm",
+        "ndvi",
+        "modis_et_mm",
+        "lst_C",
+        "precip_minus_et_mm",
+        "cec_cmol_kg",
+        "elevation_m",
+        "slope_degrees",
+        "landcover_class",
+        "delta_soc_gkg",
+        "delta_soil_ph",
+        "delta_soil_moisture",
+        "delta_leaching_risk"
+      ],
+      "preview_rows": 5,
+      "size_bytes": 18893846
+    },
+    {
+      "name": "CIPA_AI_Missing_Data_Report (1).csv",
+      "path": "data/tables/CIPA_AI_Missing_Data_Report_(1).csv",
+      "columns": [
+        "",
+        "missing_values",
+        "missing_percent"
+      ],
+      "preview_rows": 5,
+      "size_bytes": 538
+    },
+    {
+      "name": "CIPA_AI_Spearman_Correlation (1).csv",
+      "path": "data/tables/CIPA_AI_Spearman_Correlation_(1).csv",
+      "columns": [
+        "",
+        "era5_annual_rainfall_mm",
+        "chirps_annual_rainfall_mm",
+        "annual_evaporation_mm",
+        "annual_potential_evaporation_mm",
+        "mean_temperature_c",
+        "mean_soil_moisture_layer1",
+        "precipitation_minus_evaporation_mm",
+        "aridity_index",
+        "annual_total_runoff_mm",
+        "annual_subsurface_runoff_mm",
+        "elevation_m",
+        "slope_degrees",
+        "ndvi",
+        "ndwi",
+        "ndmi",
+        "soil_ph_10cm",
+        "soil_soc_g_kg_10cm",
+        "soil_sand_percent_10cm",
+        "landcover_2021",
+        "rainfall_pet_ratio",
+        "soil_ph_soc_interaction",
+        "vegetation_moisture_interaction"
+      ],
+      "preview_rows": 5,
+      "size_bytes": 10167
+    },
+    {
+      "name": "SHAP_Cluster_Feature_Importance.csv",
+      "path": "data/tables/SHAP_Cluster_Feature_Importance.csv",
+      "columns": [
+        "feature",
+        "mean_absolute_SHAP"
+      ],
+      "preview_rows": 4,
+      "size_bytes": 136
+    }
+  ],
+  "figures": [
+    {
+      "name": "01_Soil_Organic_Carbon.png",
+      "path": "assets/figures/01_Soil_Organic_Carbon.png"
+    },
+    {
+      "name": "02_Soil_pH.png",
+      "path": "assets/figures/02_Soil_pH.png"
+    },
+    {
+      "name": "03_Clay_Content.png",
+      "path": "assets/figures/03_Clay_Content.png"
+    },
+    {
+      "name": "04_Sand_Content.png",
+      "path": "assets/figures/04_Sand_Content.png"
+    },
+    {
+      "name": "09_Environmental_Vulnerability_Index.png",
+      "path": "assets/figures/09_Environmental_Vulnerability_Index.png"
+    },
+    {
+      "name": "10_Environmental_Vulnerability_Classes.png",
+      "path": "assets/figures/10_Environmental_Vulnerability_Classes.png"
+    },
+    {
+      "name": "15_EVI_Area_Distribution.png",
+      "path": "assets/figures/15_EVI_Area_Distribution.png"
+    },
+    {
+      "name": "AI-Driven ERW Impact Assessment Workflow.png",
+      "path": "assets/figures/AI-Driven_ERW_Impact_Assessment_Workflow.png"
+    },
+    {
+      "name": "CapeTown_Carbon_Sequestration_Potential_Map.png",
+      "path": "assets/figures/CapeTown_Carbon_Sequestration_Potential_Map.png"
+    },
+    {
+      "name": "CapeTown_Soil_Moisture_Inflow_Lag_HighRes.png",
+      "path": "assets/figures/CapeTown_Soil_Moisture_Inflow_Lag_HighRes.png"
+    },
+    {
+      "name": "CIPA_AI_Correlation_Matrix (1).png",
+      "path": "assets/figures/CIPA_AI_Correlation_Matrix_(1).png"
+    },
+    {
+      "name": "CIPA_AI_Environmental_Clusters (1).png",
+      "path": "assets/figures/CIPA_AI_Environmental_Clusters_(1).png"
+    },
+    {
+      "name": "CIPA_AI_environmental_screening_index_2025.png",
+      "path": "assets/figures/CIPA_AI_environmental_screening_index_2025.png"
+    },
+    {
+      "name": "CIPA_AI_environmental_screening_index_2025.png",
+      "path": "assets/figures/CIPA_AI_ERW_Environmental_Social_Outputs_(1)__CIPA_AI_environmental_screening_index_2025.png"
+    },
+    {
+      "name": "CIPA_AI_rainfall_2025.png",
+      "path": "assets/figures/CIPA_AI_rainfall_2025.png"
+    },
+    {
+      "name": "CIPA_AI_soil_moisture_2025.png",
+      "path": "assets/figures/CIPA_AI_soil_moisture_2025.png"
+    },
+    {
+      "name": "Baseline_ndvi.png",
+      "path": "assets/figures/Baseline_ndvi.png"
+    },
+    {
+      "name": "Comparison_53_vs_60_Savings_36Mo (1).png",
+      "path": "assets/figures/Comparison_53_vs_60_Savings_36Mo_(1).png"
+    },
+    {
+      "name": "Comparison_53_vs_60_Savings_36Mo.png",
+      "path": "assets/figures/Comparison_53_vs_60_Savings_36Mo.png"
+    },
+    {
+      "name": "Extended_36Mo_Reservoir_Policy_Comparison_HighRes.png",
+      "path": "assets/figures/Extended_36Mo_Reservoir_Policy_Comparison_HighRes.png"
+    },
+    {
+      "name": "SHAP_Environmental_Social_Clusters.png",
+      "path": "assets/figures/SHAP_Environmental_Social_Clusters.png"
+    }
+  ],
+  "maps": [
+    {
+      "name": "CIPAAI_CapeTown_Interactive_WebGIS.html",
+      "path": "maps/CIPAAI_CapeTown_Interactive_WebGIS.html"
+    },
+    {
+      "name": "CIPA_AI_Cape_Town_ERW_Screening_Map (1).html",
+      "path": "maps/CIPA_AI_Cape_Town_ERW_Screening_Map_(1).html"
+    }
+  ],
+  "rasters": [
+    {
+      "name": "Baseline_clay.tif",
+      "path": "data/rasters/Baseline_clay.tif",
+      "size_bytes": 48947
+    },
+    {
+      "name": "Baseline_ph.tif",
+      "path": "data/rasters/Baseline_ph.tif",
+      "size_bytes": 27199
+    },
+    {
+      "name": "Baseline_sand.tif",
+      "path": "data/rasters/Baseline_sand.tif",
+      "size_bytes": 49514
+    },
+    {
+      "name": "Baseline_soc.tif",
+      "path": "data/rasters/Baseline_soc.tif",
+      "size_bytes": 64961
+    },
+    {
+      "name": "Biochar_Preliminary_Screening_Priority.tif",
+      "path": "data/rasters/Biochar_Preliminary_Screening_Priority.tif",
+      "size_bytes": 11121
+    },
+    {
+      "name": "CapeTown_CDR_Net_10t_ha.tif",
+      "path": "data/rasters/CapeTown_CDR_Net_10t_ha.tif",
+      "size_bytes": 4103
+    },
+    {
+      "name": "CapeTown_CDR_Net_10t_ha.tif.aux.xml",
+      "path": "data/rasters/CapeTown_CDR_Net_10t_ha.tif.aux.xml",
+      "size_bytes": 424
+    },
+    {
+      "name": "CapeTown_ERW_Population_Density.tif",
+      "path": "data/rasters/CapeTown_ERW_Population_Density.tif",
+      "size_bytes": 1342434
+    },
+    {
+      "name": "CapeTown_SoilGrids_All_Properties.tif",
+      "path": "data/rasters/CapeTown_SoilGrids_All_Properties.tif",
+      "size_bytes": 4076286
+    },
+    {
+      "name": "CapeTown_SoilGrids_All_Properties.tif.aux.xml",
+      "path": "data/rasters/CapeTown_SoilGrids_All_Properties.tif.aux.xml",
+      "size_bytes": 622702
+    },
+    {
+      "name": "CapeTown_SoilGrids_bdod.tif",
+      "path": "data/rasters/CapeTown_SoilGrids_bdod.tif",
+      "size_bytes": 233062
+    },
+    {
+      "name": "CapeTown_SoilGrids_bdod.tif.aux.xml",
+      "path": "data/rasters/CapeTown_SoilGrids_bdod.tif.aux.xml",
+      "size_bytes": 616523
+    },
+    {
+      "name": "CapeTown_SoilGrids_cec.tif",
+      "path": "data/rasters/CapeTown_SoilGrids_cec.tif",
+      "size_bytes": 284090
+    },
+    {
+      "name": "CapeTown_SoilGrids_cec.tif.aux.xml",
+      "path": "data/rasters/CapeTown_SoilGrids_cec.tif.aux.xml",
+      "size_bytes": 616774
+    },
+    {
+      "name": "CapeTown_SoilGrids_cfvo.tif",
+      "path": "data/rasters/CapeTown_SoilGrids_cfvo.tif",
+      "size_bytes": 315814
+    },
+    {
+      "name": "CapeTown_SoilGrids_cfvo.tif.aux.xml",
+      "path": "data/rasters/CapeTown_SoilGrids_cfvo.tif.aux.xml",
+      "size_bytes": 616838
+    },
+    {
+      "name": "CapeTown_SoilGrids_clay.tif",
+      "path": "data/rasters/CapeTown_SoilGrids_clay.tif",
+      "size_bytes": 343589
+    },
+    {
+      "name": "CapeTown_SoilGrids_clay.tif.aux.xml",
+      "path": "data/rasters/CapeTown_SoilGrids_clay.tif.aux.xml",
+      "size_bytes": 616851
+    },
+    {
+      "name": "CapeTown_SoilGrids_nitrogen.tif",
+      "path": "data/rasters/CapeTown_SoilGrids_nitrogen.tif",
+      "size_bytes": 502419
+    },
+    {
+      "name": "CapeTown_SoilGrids_nitrogen.tif.aux.xml",
+      "path": "data/rasters/CapeTown_SoilGrids_nitrogen.tif.aux.xml",
+      "size_bytes": 619811
+    },
+    {
+      "name": "CapeTown_SoilGrids_ocd.tif",
+      "path": "data/rasters/CapeTown_SoilGrids_ocd.tif",
+      "size_bytes": 366547
+    },
+    {
+      "name": "CapeTown_SoilGrids_ocd.tif.aux.xml",
+      "path": "data/rasters/CapeTown_SoilGrids_ocd.tif.aux.xml",
+      "size_bytes": 617549
+    },
+    {
+      "name": "CapeTown_SoilGrids_phh2o.tif",
+      "path": "data/rasters/CapeTown_SoilGrids_phh2o.tif",
+      "size_bytes": 142079
+    },
+    {
+      "name": "CapeTown_SoilGrids_phh2o.tif.aux.xml",
+      "path": "data/rasters/CapeTown_SoilGrids_phh2o.tif.aux.xml",
+      "size_bytes": 616391
+    },
+    {
+      "name": "CapeTown_SoilGrids_sand.tif",
+      "path": "data/rasters/CapeTown_SoilGrids_sand.tif",
+      "size_bytes": 336896
+    },
+    {
+      "name": "CapeTown_SoilGrids_sand.tif.aux.xml",
+      "path": "data/rasters/CapeTown_SoilGrids_sand.tif.aux.xml",
+      "size_bytes": 617166
+    },
+    {
+      "name": "CapeTown_SoilGrids_soc.tif",
+      "path": "data/rasters/CapeTown_SoilGrids_soc.tif",
+      "size_bytes": 401067
+    },
+    {
+      "name": "CapeTown_SoilGrids_soc.tif.aux.xml",
+      "path": "data/rasters/CapeTown_SoilGrids_soc.tif.aux.xml",
+      "size_bytes": 617773
+    },
+    {
+      "name": "CIPAAI_Elevation_SRTM.tif",
+      "path": "data/rasters/CIPAAI_Elevation_SRTM.tif",
+      "size_bytes": 3535790
+    },
+    {
+      "name": "CIPAAI_Elevation_SRTM.tif.aux.xml",
+      "path": "data/rasters/CIPAAI_Elevation_SRTM.tif.aux.xml",
+      "size_bytes": 452
+    },
+    {
+      "name": "CIPAAI_Environmental_Vulnerability_Index.tif",
+      "path": "data/rasters/CIPAAI_Environmental_Vulnerability_Index.tif",
+      "size_bytes": 76956
+    },
+    {
+      "name": "CIPAAI_era5_et_mm_2002_2025.tif",
+      "path": "data/rasters/CIPAAI_era5_et_mm_2002_2025.tif",
+      "size_bytes": 253298
+    },
+    {
+      "name": "CIPAAI_era5_precip_mm_2002_2025.tif",
+      "path": "data/rasters/CIPAAI_era5_precip_mm_2002_2025.tif",
+      "size_bytes": 283107
+    },
+    {
+      "name": "CIPAAI_ESA_WorldCover_2021.tif",
+      "path": "data/rasters/CIPAAI_ESA_WorldCover_2021.tif",
+      "size_bytes": 5114496
+    },
+    {
+      "name": "CIPAAI_ESA_WorldCover_2021.tif.aux.xml",
+      "path": "data/rasters/CIPAAI_ESA_WorldCover_2021.tif.aux.xml",
+      "size_bytes": 452
+    },
+    {
+      "name": "CIPAAI_EVI_Classes.tif",
+      "path": "data/rasters/CIPAAI_EVI_Classes.tif",
+      "size_bytes": 20382
+    },
+    {
+      "name": "CIPAAI_lst_C_2002_2025.tif",
+      "path": "data/rasters/CIPAAI_lst_C_2002_2025.tif",
+      "size_bytes": 522707
+    },
+    {
+      "name": "CIPAAI_modis_et_mm_2002_2025.tif",
+      "path": "data/rasters/CIPAAI_modis_et_mm_2002_2025.tif",
+      "size_bytes": 231323
+    },
+    {
+      "name": "CIPAAI_ndvi_2002_2025.tif",
+      "path": "data/rasters/CIPAAI_ndvi_2002_2025.tif",
+      "size_bytes": 704001
+    },
+    {
+      "name": "CIPAAI_precip_mm_2002_2025.tif",
+      "path": "data/rasters/CIPAAI_precip_mm_2002_2025.tif",
+      "size_bytes": 322892
+    },
+    {
+      "name": "CIPAAI_Soil_bulk_density_kgdm3.tif",
+      "path": "data/rasters/CIPAAI_Soil_bulk_density_kgdm3.tif",
+      "size_bytes": 7614
+    },
+    {
+      "name": "CIPAAI_Soil_Carbon_Properties_250m.tif",
+      "path": "data/rasters/CIPAAI_Soil_Carbon_Properties_250m.tif",
+      "size_bytes": 17677
+    },
+    {
+      "name": "CIPAAI_Soil_Carbon_Properties_250m.tif.aux.xml",
+      "path": "data/rasters/CIPAAI_Soil_Carbon_Properties_250m.tif.aux.xml",
+      "size_bytes": 805
+    },
+    {
+      "name": "CIPAAI_Soil_cec_cmolckg.tif",
+      "path": "data/rasters/CIPAAI_Soil_cec_cmolckg.tif",
+      "size_bytes": 7608
+    },
+    {
+      "name": "CIPAAI_Soil_clay_percent.tif",
+      "path": "data/rasters/CIPAAI_Soil_clay_percent.tif",
+      "size_bytes": 7608
+    },
+    {
+      "name": "CIPAAI_soil_moisture_m3m3_2002_2025.tif",
+      "path": "data/rasters/CIPAAI_soil_moisture_m3m3_2002_2025.tif",
+      "size_bytes": 301216
+    },
+    {
+      "name": "CIPAAI_Soil_sand_percent.tif",
+      "path": "data/rasters/CIPAAI_Soil_sand_percent.tif",
+      "size_bytes": 7608
+    },
+    {
+      "name": "CIPAAI_Soil_soc_gkg.tif",
+      "path": "data/rasters/CIPAAI_Soil_soc_gkg.tif",
+      "size_bytes": 7604
+    },
+    {
+      "name": "CIPAAI_Soil_soil_ph (1).tif",
+      "path": "data/rasters/CIPAAI_Soil_soil_ph_(1).tif",
+      "size_bytes": 7604
+    },
+    {
+      "name": "CIPAAI_Soil_soil_ph.tif",
+      "path": "data/rasters/CIPAAI_Soil_soil_ph.tif",
+      "size_bytes": 7604
+    },
+    {
+      "name": "CIPAAI_temperature_C_2002_2025.tif",
+      "path": "data/rasters/CIPAAI_temperature_C_2002_2025.tif",
+      "size_bytes": 284459
+    },
+    {
+      "name": "CIPAAI_Terrain_Slope.tif",
+      "path": "data/rasters/CIPAAI_Terrain_Slope.tif",
+      "size_bytes": 11067399
+    },
+    {
+      "name": "CIPAAI_water_available_mm_2002_2025.tif",
+      "path": "data/rasters/CIPAAI_water_available_mm_2002_2025.tif",
+      "size_bytes": 458652
+    },
+    {
+      "name": "CIPAAI_water_available_mm_2002_2025.tif.aux.xml",
+      "path": "data/rasters/CIPAAI_water_available_mm_2002_2025.tif.aux.xml",
+      "size_bytes": 42979
+    },
+    {
+      "name": "CIPA_AI_Cape_Town_Environmental_Stack_2025 (1).tif",
+      "path": "data/rasters/CIPA_AI_Cape_Town_Environmental_Stack_2025_(1).tif",
+      "size_bytes": 139944995
+    },
+    {
+      "name": "CIPA_AI_Cape_Town_Environmental_Stack_2025 (1).tif.aux.xml",
+      "path": "data/rasters/CIPA_AI_Cape_Town_Environmental_Stack_2025_(1).tif.aux.xml",
+      "size_bytes": 1503240
+    },
+    {
+      "name": "CIPA_AI_Cape_Town_Preliminary_ERW_Screening_2025 (1).tif",
+      "path": "data/rasters/CIPA_AI_Cape_Town_Preliminary_ERW_Screening_2025_(1).tif",
+      "size_bytes": 246987
+    },
+    {
+      "name": "CIPA_AI_Cape_Town_Preliminary_ERW_Screening_2025 (1).tif.aux.xml",
+      "path": "data/rasters/CIPA_AI_Cape_Town_Preliminary_ERW_Screening_2025_(1).tif.aux.xml",
+      "size_bytes": 465
+    },
+    {
+      "name": "CIPA_AI_Environmental_Social_Impact_Indicators.tif",
+      "path": "data/rasters/CIPA_AI_Environmental_Social_Impact_Indicators.tif",
+      "size_bytes": 2572
+    },
+    {
+      "name": "CIPA_AI_ERW_Combined_Environmental_Raster_2001_2026.tif",
+      "path": "data/rasters/CIPA_AI_ERW_Combined_Environmental_Raster_2001_2026.tif",
+      "size_bytes": 5165694
+    },
+    {
+      "name": "CIPA_AI_ERW_Elevation_Slope.tif",
+      "path": "data/rasters/CIPA_AI_ERW_Elevation_Slope.tif",
+      "size_bytes": 26698
+    },
+    {
+      "name": "CIPA_AI_environmental_screening_index_2025.png.aux.xml",
+      "path": "data/rasters/CIPA_AI_environmental_screening_index_2025.png.aux.xml",
+      "size_bytes": 1367
+    },
+    {
+      "name": "CIPA_AI_Environmental_Social_Impact_Indicators.tif",
+      "path": "data/rasters/CIPA_AI_ERW_Environmental_Social_Outputs_(1)__CIPA_AI_Environmental_Social_Impact_Indicators.tif",
+      "size_bytes": 2572
+    },
+    {
+      "name": "CIPA_AI_Environmental_Social_Impact_Indicators.tif.aux.xml",
+      "path": "data/rasters/CIPA_AI_Environmental_Social_Impact_Indicators.tif.aux.xml",
+      "size_bytes": 49136
+    },
+    {
+      "name": "CIPA_AI_rainfall_2025.png.aux.xml",
+      "path": "data/rasters/CIPA_AI_rainfall_2025.png.aux.xml",
+      "size_bytes": 1366
+    },
+    {
+      "name": "CIPA_AI_soil_moisture_2025.png.aux.xml",
+      "path": "data/rasters/CIPA_AI_soil_moisture_2025.png.aux.xml",
+      "size_bytes": 1366
+    },
+    {
+      "name": "ERW_Preliminary_Screening_Priority.tif",
+      "path": "data/rasters/ERW_Preliminary_Screening_Priority.tif",
+      "size_bytes": 11121
+    }
+  ],
+  "documents": [
+    {
+      "name": "06_Cluster_Model_Metadata.json",
+      "path": "documentation/06_Cluster_Model_Metadata.json"
+    },
+    {
+      "name": "CIPA_AI_Decision_Support_Metadata.json",
+      "path": "documentation/CIPA_AI_Decision_Support_Metadata.json"
+    },
+    {
+      "name": "CIPA_AI_Model_Configuration (1).json",
+      "path": "documentation/CIPA_AI_Model_Configuration_(1).json"
+    },
+    {
+      "name": "ClimateNatureAI_CIEIF_Revised_One_Year_Proposal.docx",
+      "path": "source_documents/ClimateNatureAI_CIEIF_Revised_One_Year_Proposal.docx"
+    },
+    {
+      "name": "Tesfaye_ClimateNatureAI_CIEIF_Revised_One_Year_Proposal 7 Nov 2026.docx",
+      "path": "source_documents/Tesfaye_ClimateNatureAI_CIEIF_Revised_One_Year_Proposal_7_Nov_2026.docx"
+    }
+  ]
+}

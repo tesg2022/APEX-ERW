@@ -1,0 +1,12 @@
+<PAMDataset>
+  <PAMRasterBand band="1">
+    <Description>net_cdr_10_tco2_ha</Description>
+    <Metadata>
+      <MDI key="STATISTICS_MINIMUM">0.14825868177782</MDI>
+      <MDI key="STATISTICS_MAXIMUM">0.14825868177782</MDI>
+      <MDI key="STATISTICS_MEAN">0.14825868177782</MDI>
+      <MDI key="STATISTICS_STDDEV">0</MDI>
+      <MDI key="STATISTICS_VALID_PERCENT">42.1</MDI>
+    </Metadata>
+  </PAMRasterBand>
+</PAMDataset>

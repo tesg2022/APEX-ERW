@@ -1,0 +1,20 @@
+{
+  "project": "CIPA-AI ERW Cape Town",
+  "study_period": "2001-2026",
+  "study_area": "Durbanville agricultural belt",
+  "environmental_records": 2149,
+  "environmental_variables_available": [
+    "ndvi"
+  ],
+  "suitability_variables_used": [
+    "ndvi",
+    "slope"
+  ],
+  "social_data_available": false,
+  "mineralogical_data_available": false,
+  "carbon_scenarios": [],
+  "supervised_erw_outcomes_available": false,
+  "supervised_model_status": "Requires verified ERW experimental measurements",
+  "uncertainty_iterations": 5000,
+  "outputs_directory": "/content/CIPA_AI_Final_Research_Outputs"
+}

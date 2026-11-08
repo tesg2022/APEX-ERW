@@ -1,0 +1,10 @@
+{
+  "algorithm": "KMeans",
+  "number_of_clusters": 4,
+  "features": [
+    "ndvi",
+    "slope"
+  ],
+  "silhouette_score": 0.4109831152454241,
+  "interpretation": "Exploratory clustering, not ERW causal impact"
+}
